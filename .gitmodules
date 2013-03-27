@@ -1,3 +1,6 @@
 [submodule "puppet/modules/tomcat7"]
 	path = puppet/modules/tomcat7
 	url = git@github.com:jstaffans/puppet-tomcat7.git
+[submodule "puppet/modules/java"]
+	path = puppet/modules/java
+	url = git@github.com:jstaffans/puppet-java.git
