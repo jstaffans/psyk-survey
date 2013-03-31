@@ -2,4 +2,8 @@
 /lib/
 /classes/
 /targets/
+target
 .vagrant
+.idea
+log.roo
+*.iml
