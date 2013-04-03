@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+      layout:decorator="master">
+<head>
+    <title>Surveys</title>
+</head>
+<body>
+<div class="container" layout:fragment="content">
+    <div class="row">
+        <div class="span8">
+            <h1 th:text="#{heading.surveys}">Surveys</h1>
+            <p>Number of surveys: <span th:text="${#lists.size(allSurveys)}">1</span></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

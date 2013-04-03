@@ -9,6 +9,7 @@ Vagrant::Config.run do |config|
   config.vm.define "appserver" do |app|
     app.vm.network :hostonly, "33.33.33.10"
     app.vm.host_name = "psyk-appserver.local"
+
     app.vm.provision :puppet, :module_path => "puppet/modules" do |puppet|
       puppet.manifests_path = "puppet"
       puppet.manifest_file = "appserver.pp"
